@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Resume Form Section -->
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <label for="photo">Upload Profile Picture</label><br><br>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="username" placeholder="Username (for URL)" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Education</legend>
+                <input type="text" id="degree" placeholder="Degree" required>
+                <input type="text" id="school" placeholder="School/University" required>
+                <input type="text" id="graduationYear" placeholder="Graduation Year" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" placeholder="Enter skills, separated by commas"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Work Experience</legend>
+                <input type="text" id="company" placeholder="Company" required>
+                <input type="text" id="role" placeholder="Role" required>
+                <textarea id="responsibilities" placeholder="Key Responsibilities"></textarea>
+            </fieldset>
+            
+            <button type="button" id="generateResumeBtn">Generate Resume</button>
+        </form>
+        
+        <!-- Resume Preview Section -->
+        <div id="resumePreview" class="resume-preview">
+            <!-- Dynamically generated resume will be displayed here -->
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button id="editResumeBtn">Edit Resume</button>
+            <button id="downloadPdfBtn">Download as PDF</button>
+            <button id="shareLinkBtn">Share Link</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>
+
