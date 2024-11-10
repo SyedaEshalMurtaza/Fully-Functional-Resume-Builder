@@ -15,7 +15,7 @@ A dynamic and editable Resume Builder that allows users to create, customize, an
 
 ## Live Demo
 
-You can view the live demo [here](#) (Insert your live project URL if hosted online).
+You can view the live demo [https://vercel.com/syeda-eshal-murtazas-projects/fully-functional-resume-builder/kRFeMD6vfQnYba64uX63K91QjZce](#) (Insert your live project URL if hosted online).
 
 ## Technologies Used
 
